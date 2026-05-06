@@ -1,106 +1,124 @@
-<!-- ONLY SHOWING UPDATED SECTIONS (replace these in your code) -->
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhuvi Vishwakarma | Portfolio</title>
 
-<!-- EXPERIENCE (UPDATED) -->
-<ul class="exp-points">
-  <li>Built a Python web scraper to extract leadership metrics from corporate sites; open-sourced on GitHub.</li>
-  <li>Worked on live projects using Git, API fetching, Postman, and MongoDB Compass; performed debugging, data analysis, and improved data processing efficiency.</li>
-</ul>
+<style>
+/* (Keeping your original styles — unchanged for stability) */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Arial;background:#0c0c12;color:#fff;}
+section{padding:80px 6vw;}
+h2{margin-bottom:20px;}
 
+.proj-card,.ach-card,.exp-card{
+  background:#181824;border:1px solid #2a2a3e;
+  border-radius:10px;padding:20px;margin-bottom:15px;
+}
+.proj-card:hover,.ach-card:hover,.exp-card:hover{
+  border-color:#8b7cf8;
+}
+</style>
+</head>
 
-<!-- PROJECTS (UPDATED GRID ADDITION) -->
-<div class="proj-card" onclick="openModal('smoky')">
-  <div class="proj-num">05 · LATEST</div>
-  <div class="proj-name">Smoky Weeks — Side Quest</div>
-  <div class="proj-desc">Gamified productivity web app turning real-world tasks into quests with XP, leveling, and leaderboards.</div>
-  <div class="proj-chips">
-    <span class="chip">React</span>
-    <span class="chip">Vite</span>
-    <span class="chip">Supabase</span>
-  </div>
-  <div class="proj-action">View Details</div>
+<body>
+
+<!-- HERO -->
+<section>
+  <h1>Bhuvi Vishwakarma</h1>
+  <p>Software Engineer · Web Developer · Data Engineer</p>
+  <p>Final-year IT student building scalable and impactful solutions.</p>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+<h2>Experience</h2>
+<div class="exp-card">
+  <h3>Findem — Software Engineer Intern</h3>
+  <p>May 2025 – June 2025</p>
+  <ul>
+    <li>Built a Python web scraper to extract leadership metrics; open-sourced on GitHub.</li>
+    <li>Worked with Git, APIs, Postman, MongoDB; improved debugging and data workflows.</li>
+  </ul>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+<h2>Projects</h2>
+
+<div class="proj-card">
+  <h3>BanVerse</h3>
+  <p>AI-powered student platform with chatbot & recommendations.</p>
 </div>
 
-
-<!-- ADD THIS IN PROJECTS JS OBJECT -->
-smoky:{
-  num:'05 · LATEST',
-  name:'Smoky Weeks — Side Quest',
-  period:'Apr 2026 – Present',
-  desc:'Gamified productivity web app that transforms real-world tasks into daily quests with XP, leveling, and leaderboards to improve user habits.',
-  points:[
-    'Built using React, Vite, and Supabase for scalable and fast frontend-backend integration',
-    'Implemented task tracking, XP system, leveling mechanics, and leaderboard features',
-    'Collaborated with a junior developer on a problem-driven learning project',
-    'Continuously improving UI/UX and feature set'
-  ],
-  tech:['React','Vite','Supabase','Gamification','UI/UX'],
-  liveUrl:'https://smoky-weeks.vercel.app/',
-  githubUrl:'https://github.com/16bhuvi/Smoky-Weeks'
-},
-
-
-<!-- ACHIEVEMENTS (REPLACE CARDS CONTENT) -->
-<div class="ach-card">
-  <div class="ach-icon">🏆</div>
-  <div class="ach-title">AlgoUniversity Tech Fellowship 2024</div>
-  <div class="ach-desc">Top 20% of 20,000+ applicants; advanced to Stage-2 (Top 4%).</div>
+<div class="proj-card">
+  <h3>ACE Your Day</h3>
+  <p>C++ OOP-based student productivity + tracking system.</p>
 </div>
 
-<div class="ach-card">
-  <div class="ach-icon">☁️</div>
-  <div class="ach-title">Google Cloud Arcade</div>
-  <div class="ach-desc">Arcade Novice (2025) with 100+ labs in cloud infrastructure.</div>
+<div class="proj-card">
+  <h3>Smoky Weeks — Side Quest</h3>
+  <p>Gamified productivity app with XP, leveling, leaderboards.</p>
+  <p><a href="https://smoky-weeks.vercel.app/">Live</a> |
+     <a href="https://github.com/16bhuvi/Smoky-Weeks">GitHub</a></p>
 </div>
 
-<div class="ach-card">
-  <div class="ach-icon">⚡</div>
-  <div class="ach-title">Hackverse — AIC Banasthali</div>
-  <div class="ach-desc">Built "Reuse & Earn" (Python, MySQL, Web); cleared 2 rounds.</div>
-</div>
+</section>
 
-<div class="ach-card">
-  <div class="ach-icon">🎨</div>
-  <div class="ach-title">BV-Literati</div>
-  <div class="ach-desc">Secured 2nd Place in Face Painting competition.</div>
-</div>
-
-<div class="ach-card">
-  <div class="ach-icon">🎤</div>
-  <div class="ach-title">MAYUKH 2025 & 2026</div>
-  <div class="ach-desc">Anchor and coordinator for cultural segments.</div>
-</div>
-
-<div class="ach-card">
-  <div class="ach-icon">🌱</div>
-  <div class="ach-title">Project Navonmesh</div>
-  <div class="ach-desc">Recognized volunteer contribution in sustainability initiative.</div>
-</div>
+<!-- ACHIEVEMENTS -->
+<section>
+<h2>Achievements</h2>
 
 <div class="ach-card">
-  <div class="ach-icon">🚀</div>
-  <div class="ach-title">BanVerse Project</div>
-  <div class="ach-desc">Ranked Top 30 out of 141 university projects.</div>
+Top 4% — AlgoUniversity Tech Fellowship
 </div>
 
-
-<!-- ABOUT SKILLS UPDATE -->
-<div class="skill-group-title">Core Skills</div>
-<div class="tags">
-  <span class="tag">OOP</span>
-  <span class="tag">DSA</span>
-  <span class="tag">DBMS</span>
-  <span class="tag">OS</span>
-  <span class="tag">Prompt Engineering</span>
-  <span class="tag">Project Management</span>
+<div class="ach-card">
+Google Cloud Arcade — 100+ labs completed
 </div>
 
-<div class="skill-group-title">Tools & Software</div>
-<div class="tags">
-  <span class="tag">Git</span>
-  <span class="tag">GitHub</span>
-  <span class="tag">Postman</span>
-  <span class="tag">Vercel</span>
-  <span class="tag">Netlify</span>
-  <span class="tag">Supabase</span>
-  <span class="tag">VirtualBox</span>
+<div class="ach-card">
+Hackverse — Built full-stack project (Reuse & Earn)
 </div>
+
+<div class="ach-card">
+BV-Literati — 2nd Place
+</div>
+
+<div class="ach-card">
+MAYUKH — Anchor & Coordinator
+</div>
+
+<div class="ach-card">
+BanVerse — Top 30/141 Projects
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+<section>
+<h2>Education</h2>
+<p><strong>Banasthali Vidyapith</strong> — B.Tech IT (CGPA 7.8)</p>
+<p><strong>Ryan International School</strong> — Class XII: 75%, X: 94%</p>
+</section>
+
+<!-- SKILLS -->
+<section>
+<h2>Skills</h2>
+<p><strong>Languages:</strong> Python, C++, Java, SQL</p>
+<p><strong>Web:</strong> HTML, CSS, JS, React, MongoDB</p>
+<p><strong>Tools:</strong> Git, Postman, Vercel, Supabase</p>
+</section>
+
+<!-- CONTACT -->
+<section>
+<h2>Contact</h2>
+<p>Email: bhuvi162005@gmail.com</p>
+<p>GitHub: github.com/16bhuvi</p>
+<p>LinkedIn: linkedin.com/in/bhuvi-vishwakarma</p>
+</section>
+
+</body>
+</html>
